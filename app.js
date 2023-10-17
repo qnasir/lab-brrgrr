@@ -47,18 +47,42 @@ function renderPatty() {
 
 function renderCheese() {
   //Trial 1 - Change the visibility of cheese based on state by manipulating the DOM
+  let cheese = document.querySelector("#cheese");
+  if (state.Cheese) {
+    cheese.style.display = "inherit";
+  } else {
+    cheese.style.display = "none";
+  }
 }
 
 function renderTomatoes() {
   //Trial 1 - Change the visibility of Tomatoes based on state by manipulating the DOM
+  let tomatoes = document.querySelector("#tomato");
+  if (state.tomatoes) {
+    tomatoes.style.display = "inherit";
+  } else {
+    tomatoes.style.display = "none";
+  }
 }
 
 function renderOnions() {
   //Trial 1 - Change the visibility of Onions based on state by manipulating the DOM
+  let onions = document.querySelector("#onion");
+  if (state.onions) {
+    onions.style.display = "inherit";
+  } else {
+    onions.style.display = "none";
+  }
 }
 
 function renderLettuce() {
   //Trial 1 - Change the visibility of Lettuce based on state by manipulating the DOM
+  let lettuce = document.querySelector("#lettuce");
+  if (state.lettuce) {
+    lettuce.style.display = "inherit";
+  } else {
+    lettuce.style.display = "none";
+  }
 }
 
 document.querySelector(".btn-patty").onclick = function () {
@@ -67,15 +91,31 @@ document.querySelector(".btn-patty").onclick = function () {
 };
 
 // Trial 2 - Setup event listener for the cheese button
+document.querySelector(".btn-cheese").onclick = function () {
+  state.Cheese = !state.Cheese;
+  renderAll();
+};
 
 
 // Trial 2 - Setup event listener for the tomatoes button
+document.querySelector(".btn-tomatoes").onclick = function () {
+  state.tomatoes = !state.tomatoes;
+  renderAll();
+};
 
 
 // Trial 2 - Setup event listener for the onion button
+document.querySelector(".btn-onions").onclick = function () {
+  state.onions = !state.onions;
+  renderAll();
+};
 
 
 // Trial 2 - Setup event listener for the lettuce button
+document.querySelector(".btn-lettuce").onclick = function () {
+  state.lettuce = !state.lettuce;
+  renderAll();
+};
 
 
 //Challenge 1 - Add/Remove the class active to the buttons based on state
