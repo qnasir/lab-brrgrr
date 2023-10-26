@@ -131,48 +131,63 @@ function renderButtons(){
 //Challenge 2 - Render only the items selected in the ingredients board based on the state
 function renderIngredientsBoard(){
   let patty = document.getElementById("patty");
+  let patty1 = document.getElementById("patty1");
   if (state.Patty) {
-    patty.style.display= "block";
+    patty.style.display = "inherit";
+    patty1.style.display = "inherit";
   } 
   else {
     patty.style.display = "none";
+    patty1.style.display = "none";
 }
 
 
   let tomatoes = document.getElementById("tomato");
+  let tomato1 = document.getElementById("tomato1");
   if (state.Tomatoes) {
-    tomatoes.style.display= "block";
+    tomatoes.style.display = "inherit";
+    tomato1.style.display = "inherit";
   } 
   else {
     tomatoes.style.display = "none";
+    tomato1.style.display = "none";
 }
 
   let cheese = document.getElementById("cheese");
+  let cheese1 = document.getElementById("cheese1");
   if (state.Cheese) {
-    cheese.style.display= "block";
+    cheese.style.display = "inherit";
+    cheese1.style.display = "inherit";
   } 
   else {
     cheese.style.display = "none";
+    cheese1.style.display = "none";
 }
 
 
 
   let onions = document.getElementById("onion");
+  let onion1 = document.getElementById("onion1");
   if (state.Onions) {
-    onions.style.display= "block";
+    onions.style.display = "inherit";
+    onion1.style.display = "inherit";
   } 
   else {
     onions.style.display = "none";
+    onion1.style.display = "none";
 }
 
 
 
   let lettuce = document.getElementById("lettuce");
+  let lettuce1 = document.getElementById("lettuce1")
   if (state.Lettuce) {
-    lettuce.style.display= "block";
+    lettuce.style.display = "inherit";
+    lettuce1.style.display = "inherit";
   } 
   else {
     lettuce.style.display = "none";
+    lettuce1.style.display = "none";
 }
 }
 
